@@ -15,4 +15,4 @@
 
 ### Gambar skema database
 
-![](./database.jpg)
+![](https://github.com/Jkenyut/Eigen_Test/blob/986387f2dc9edf798fe2ea05286a240f57eebad1/Backend_test_case/database.jpg)
