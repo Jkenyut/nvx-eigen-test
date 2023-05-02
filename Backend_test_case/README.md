@@ -15,4 +15,4 @@
 
 ### Gambar skema database
 
-![My Image](database.jpg)
+![My Image schema](database.jpg)
