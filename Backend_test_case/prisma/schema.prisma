@@ -1,0 +1,49 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model Members{
+  id String @id @default(uuid())
+  code String @unique
+  name String
+  lastPenaltyDate DateTime?
+  penalty Role  @default(No)
+  pinjams Pinjam[]
+   @@index([id,code])
+}
+
+model Books{
+  id String @id @default(uuid())
+  code String @unique
+  title String
+  author String
+  stock Int
+  pinjams Pinjam[]
+
+  @@index([id,code])
+} 
+
+model Pinjam{
+  id String @id @default(uuid())
+  member    Members       @relation(fields: [memberId], references: [id])
+  memberId   String
+  book    Books       @relation(fields: [bookId], references: [id])
+  bookId   String
+  tglPinjam DateTime @default(now())
+  tglKembali DateTime
+  tglPengembalian DateTime?
+  statusPengembalian Role @default(No)
+}
+
+enum Role {
+  Yes
+  No
+}

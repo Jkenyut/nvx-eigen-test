@@ -1,0 +1,3 @@
+/Backend_test_case/node_modules
+# Keep environment variables out of version control
+/Backend_test_case/.env

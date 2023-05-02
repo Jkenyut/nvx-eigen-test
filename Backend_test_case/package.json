@@ -1,0 +1,28 @@
+{
+  "name": "eigen",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "mocha test.js"
+  },
+  "author": "satria",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^4.13.0",
+    "body-parser": "^1.20.2",
+    "chai": "^4.3.7",
+    "chai-http": "^4.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "gzip": "^0.1.0",
+    "helmet": "^6.1.5",
+    "mocha": "^10.2.0",
+    "prisma": "^4.13.0",
+    "swagger-ui-express": "^4.6.2",
+    "zod": "^3.21.4"
+  }
+}
