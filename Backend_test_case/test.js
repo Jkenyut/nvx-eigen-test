@@ -7,7 +7,7 @@ const { Prisma } = require("@prisma/client");
 
 chai.use(chaiHttp);
 chai.should();
-
+//error test
 const errorTest = (desc, path, json, statusCode, messsage) => {
   it(desc, (done) => {
     chai
