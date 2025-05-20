@@ -4,8 +4,8 @@ A collection of solutions and test cases for algorithm and backend challenges.
 
 ## Project Structure
 
-- **[`Algoritma`](./Algoritma):** Contains solutions to algorithm-related questions.
-- **[`Backend_test_case`](./Backend_test_case):** Includes solutions and test cases for backend-related questions.
+- **algorithm:** Contains solutions to algorithm-related questions.
+- **backend:** Includes solutions and test cases for backend-related questions.
 
 ## Getting Started
 
