@@ -7,7 +7,11 @@ const checkMember = async (req, res, next) => {
     try {
         const conditional = "No";
         const member = await prisma.$queryRaw(
-            Prisma.sql`SELECT table1.*, COUNT(table2.memberId) as total_book_loans from members AS table1 LEFT JOIN (SELECT memberId FROM pinjam WHERE statusPengembalian = ${conditional}) as table2 on table1.id = table2.memberId GROUP BY table1.id;`
+            Prisma.sql`SELECT table1.*, COUNT(table2.memberId) as total_book_loans
+                       from members AS table1
+                                LEFT JOIN (SELECT memberId FROM pinjam WHERE statusPengembalian = ${conditional}) as table2
+                                          on table1.id = table2.memberId
+                       GROUP BY table1.id;`
         );
         // convert bigInt to String
         const convertBigInt = JSON.stringify(
