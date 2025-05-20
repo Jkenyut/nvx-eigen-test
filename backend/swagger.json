@@ -15,7 +15,9 @@
   "paths": {
     "/member": {
       "get": {
-        "tags": ["Member"],
+        "tags": [
+          "Member"
+        ],
         "summary": "checkMember",
         "operationId": "checkMember",
         "parameters": [],
@@ -510,7 +512,9 @@
     },
     "/data": {
       "get": {
-        "tags": ["Generate Data"],
+        "tags": [
+          "Generate Data"
+        ],
         "summary": "build data",
         "operationId": "builddata",
         "parameters": [],
@@ -969,7 +973,9 @@
     },
     "/pengembalian": {
       "post": {
-        "tags": ["Book"],
+        "tags": [
+          "Book"
+        ],
         "summary": "pengembalian",
         "operationId": "pengembalian",
         "parameters": [],
@@ -1661,7 +1667,9 @@
     },
     "/book": {
       "get": {
-        "tags": ["Book"],
+        "tags": [
+          "Book"
+        ],
         "summary": "checkBook",
         "operationId": "checkBook",
         "parameters": [],
@@ -2182,7 +2190,9 @@
     },
     "/pinjam": {
       "post": {
-        "tags": ["Book"],
+        "tags": [
+          "Book"
+        ],
         "summary": "pinjam",
         "operationId": "pinjam",
         "parameters": [],
@@ -3097,7 +3107,10 @@
     "schemas": {
       "Data": {
         "title": "Error",
-        "required": ["httpStatusCode", "error"],
+        "required": [
+          "httpStatusCode",
+          "error"
+        ],
         "type": "object",
         "properties": {
           "httpStatusCode": {
@@ -3115,7 +3128,9 @@
       },
       "error1": {
         "title": "error1",
-        "required": ["data"],
+        "required": [
+          "data"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -3131,7 +3146,9 @@
       },
       "checkMember": {
         "title": "checkMember",
-        "required": ["data"],
+        "required": [
+          "data"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -3173,7 +3190,14 @@
       },
       "Data2": {
         "title": "Data2",
-        "required": ["id", "code", "name", "lastPenaltyDate", "penalty", "total_book_loans"],
+        "required": [
+          "id",
+          "code",
+          "name",
+          "lastPenaltyDate",
+          "penalty",
+          "total_book_loans"
+        ],
         "type": "object",
         "properties": {
           "id": {
@@ -3207,7 +3231,9 @@
       },
       "success": {
         "title": "success",
-        "required": ["data"],
+        "required": [
+          "data"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -3227,7 +3253,10 @@
       },
       "Data5": {
         "title": "Data5",
-        "required": ["createMembers", "createBooks"],
+        "required": [
+          "createMembers",
+          "createBooks"
+        ],
         "type": "object",
         "properties": {
           "createMembers": {
@@ -3248,7 +3277,9 @@
       },
       "CreateMembers": {
         "title": "CreateMembers",
-        "required": ["count"],
+        "required": [
+          "count"
+        ],
         "type": "object",
         "properties": {
           "count": {
@@ -3262,7 +3293,9 @@
       },
       "CreateBooks": {
         "title": "CreateBooks",
-        "required": ["count"],
+        "required": [
+          "count"
+        ],
         "type": "object",
         "properties": {
           "count": {
@@ -3276,7 +3309,11 @@
       },
       "pengembalianrequest": {
         "title": "pengembalianrequest",
-        "required": ["member", "buku", "tgl_pengembalian"],
+        "required": [
+          "member",
+          "buku",
+          "tgl_pengembalian"
+        ],
         "type": "object",
         "properties": {
           "member": {
@@ -3297,7 +3334,9 @@
       },
       "success1": {
         "title": "success1",
-        "required": ["data"],
+        "required": [
+          "data"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -3310,7 +3349,9 @@
       },
       "bukutidaktersedia1": {
         "title": "bukutidaktersedia1",
-        "required": ["data"],
+        "required": [
+          "data"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -3326,7 +3367,9 @@
       },
       "membertidaktersedia1": {
         "title": "membertidaktersedia1",
-        "required": ["data"],
+        "required": [
+          "data"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -3342,7 +3385,9 @@
       },
       "invalidbody1": {
         "title": "invalidbody1",
-        "required": ["data"],
+        "required": [
+          "data"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -3358,7 +3403,11 @@
       },
       "success2": {
         "title": "success2",
-        "required": ["data", "number_of_available_books", "number_of_book_types"],
+        "required": [
+          "data",
+          "number_of_available_books",
+          "number_of_book_types"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -3421,7 +3470,13 @@
       },
       "Data12": {
         "title": "Data12",
-        "required": ["id", "code", "title", "author", "stock"],
+        "required": [
+          "id",
+          "code",
+          "title",
+          "author",
+          "stock"
+        ],
         "type": "object",
         "properties": {
           "id": {
@@ -3451,7 +3506,11 @@
       },
       "pinjamrequest": {
         "title": "pinjamrequest",
-        "required": ["member", "buku", "tgl_pinjam"],
+        "required": [
+          "member",
+          "buku",
+          "tgl_pinjam"
+        ],
         "type": "object",
         "properties": {
           "member": {
@@ -3472,7 +3531,9 @@
       },
       "notallowed1": {
         "title": "notallowed1",
-        "required": ["data"],
+        "required": [
+          "data"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -3488,7 +3549,9 @@
       },
       "bukutelahdipinjamanggotalain1": {
         "title": "bukutelahdipinjamanggotalain1",
-        "required": ["data"],
+        "required": [
+          "data"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -3504,7 +3567,9 @@
       },
       "anggotatidakbolehmeminjambukuyangsama1": {
         "title": "anggotatidakbolehmeminjambukuyangsama1",
-        "required": ["data"],
+        "required": [
+          "data"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -3520,7 +3585,9 @@
       },
       "anggotatidakbolehmeminjambuku21": {
         "title": "anggotatidakbolehmeminjambuku21",
-        "required": ["data"],
+        "required": [
+          "data"
+        ],
         "type": "object",
         "properties": {
           "data": {
@@ -3536,7 +3603,9 @@
       },
       "anggotaditangguhkan1": {
         "title": "anggotaditangguhkan1",
-        "required": ["data"],
+        "required": [
+          "data"
+        ],
         "type": "object",
         "properties": {
           "data": {

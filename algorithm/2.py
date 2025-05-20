@@ -1,10 +1,10 @@
-#fungsi longest string
+# fungsi longest string
 def longest(text):
     long = []
-    array = text.split(' ')
+    array = text.split(" ")
     for i in array:
         long.append(len(i))
-    return max(long) #max length
+    return max(long)  # max length
 
 
 try:

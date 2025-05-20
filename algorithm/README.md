@@ -1,2 +1,1 @@
-
 ### jawaban berdasarkan nomer soal

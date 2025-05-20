@@ -9,8 +9,8 @@ def count_similar(input, query):
 
 
 try:
-    INPUT = ['xc', 'dz', 'bbb', 'dz']  # input text
-    QUERY = ['bbb', 'ac', 'dz']  # qury
+    INPUT = ["xc", "dz", "bbb", "dz"]  # input text
+    QUERY = ["bbb", "ac", "dz"]  # qury
     hasil = count_similar(INPUT, QUERY)
     print(hasil)  # hasil
 except:

@@ -1,4 +1,3 @@
-
 # nvx-eigen-test
 
 A collection of solutions and test cases for algorithm and backend challenges.

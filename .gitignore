@@ -2,3 +2,4 @@
 # Keep environment variables out of version control
 /Backend_test_case/.env
 *.DS_Store
+.idea

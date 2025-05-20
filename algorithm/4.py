@@ -4,9 +4,9 @@ def subtraction_matrix(matrix, n):
     diagonal2 = 0
     for i in range(n):
         diagonal1 += matrix[i][i]  # diagonal top right to bottom
-        diagonal2 += matrix[i][n-i-1]  # diagonal  top left to bottom
+        diagonal2 += matrix[i][n - i - 1]  # diagonal  top left to bottom
 
-    return diagonal1-diagonal2  # subraction of diagonal
+    return diagonal1 - diagonal2  # subraction of diagonal
 
 
 try:
