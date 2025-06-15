@@ -1,36 +1,54 @@
-### Install Library
+## 🛠️ Tech Stack
 
-```
-npm install 
-```
+The solutions primarily leverage the following technologies:
 
-### Generate Prisma
+-   **Language:** [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) (Node.js environment)
+-   **ORM:** [Prisma](https://www.prisma.io/)
+-   **Testing:** (Specify if you use a testing framework, e.g., Jest, Mocha)
 
-```
-npx prisma init # schema prisma
-npx prisma migrate dev # migration database
-npx prisma generate # generate prisma client
-```
+## 🚀 Getting Started
 
-### Run Project
+To explore the solutions, follow these simple steps.
 
-```
-npm run dev  # start the application
-npm run test  # run tests (21 tests passing)
-```
+1.  **Clone the repository:**
+    ```bash
+    git clone [this project repository URL]
+    cd nvx-eigen-test
+    ```
 
-### Rest API
+2.  **Install Dependencies:**
+    Navigate to the `app` directory and install the required packages.
+    ```bash
+    cd app
+    npm install 
+    ```
 
-```
-GET /:Endpoint api
-GET /data : Generate mocks data
-GET /api-docs :Documentation Swagger UI 
-GET /buku : Check all books
-GET /member :Check all member
-POST /pinjam : Borrow a book
-POST /pengembalian : Return a book
-```
+3.  **Setup Prisma & Database:**
+    Initialize Prisma, migrate the database, and generate the Prisma client.
+    ```bash
+    npx prisma init 
+    npx prisma migrate dev
+    npx prisma generate
+    ```
 
-### Gambar skema database
+4.  **Run the Project:**
+    Start the application or run the tests.
+    ```bash
+    npm run dev  # Start the application
+    npm run test  # Run tests (21 tests passing)
+    ```
+
+## 📖 API Documentation in Swagger
+
+### Available Endpoints
+
+-   `GET /data`: Generate mock data for testing.
+-   `GET /api-docs`: View API documentation with Swagger UI.
+-   `GET /buku`: Get a list of all available books.
+-   `GET /member`: Get a list of all members.
+-   `POST /pinjam`: Borrow a book.
+-   `POST /pengembalian`: Return a book.
+
+### Database Schema
 
 ![](database.jpg)

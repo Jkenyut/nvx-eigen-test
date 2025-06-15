@@ -39,7 +39,7 @@ To explore the solutions, follow these simple steps.
     ```
 
 2.  **Explore the directories:**
-    -   Navigate into the `algorithm` or `backend` folders.
+    -   Navigate into the `algorithm` or `app` folders.
     -   Each sub-directory contains a specific challenge with its corresponding solution and documentation.
 
 ## 📂 Project Structure
@@ -51,7 +51,7 @@ nvx-eigen-test/
 ├── algorithm/       # Contains solutions to algorithm-related questions
 │   ├── problem-1/
 │   └── problem-2/
-├── backend/         # Includes solutions for backend-related questions
+├── app/         # Includes solutions for app-related questions
 │   ├── challenge-1/
 │   └── challenge-2/
 └── README.md
